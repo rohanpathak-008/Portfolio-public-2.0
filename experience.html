@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Experience - Rohan Pathak | Digital Marketer and Growth Professional</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6F5;--surface:#FFFFFF;--ink:#161616;--mid:#5C605D;--line:#DADDDA;--green:#2F9E68;--green-d:#1F7A4D;
+--display:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;--body:'Instrument Sans','Helvetica Neue',Arial,sans-serif;
+--page-gutter:clamp(24px,8vw,120px);--page-inset:max(var(--page-gutter),calc((100vw - 1400px)/2 + var(--page-gutter)));
+box-sizing:border-box;color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 96px);scroll-behavior:smooth;height:100%}
+body{margin:0;min-height:100%;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+header,main,footer{position:relative;z-index:1}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:rgba(245,246,245,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:6}
+header{display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px;padding:20px var(--page-inset)}
+.brand{font:700 20px var(--display);color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;justify-content:center;gap:6px;flex-wrap:wrap}
+.hire{justify-self:end;display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;font-size:15px}
+nav a{color:var(--mid);text-decoration:none;padding:8px 14px;min-height:44px;display:inline-flex;align-items:center;border-radius:999px;font-weight:500;font-size:15px}
+nav a:hover{color:var(--ink)}
+nav a[aria-current="page"]{background:var(--ink);color:#fff}
+a:focus-visible,button:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+main{padding:0 var(--page-gutter) 80px;max-width:1400px;margin:0 auto}
+.view[hidden]{display:none}
+h1,h2,h3{font-family:var(--display);line-height:1.05;letter-spacing:-.02em;margin:0}
+h1{font-size:clamp(40px,5.6vw,76px);font-weight:700;max-width:12em}
+h2{font-size:clamp(30px,4.5vw,52px);font-weight:700;margin-bottom:28px}
+h3{font-size:22px;font-weight:700;margin-bottom:6px}
+p{max-width:62ch;margin:0 0 16px}
+.muted{color:var(--mid)}
+.hero{min-height:70vh;display:flex;flex-direction:column;justify-content:center;padding:6vh 0;max-width:600px}
+@media(min-width:901px){.hero{max-width:min(600px,52%)}.hero h1{font-size:clamp(38px,5vw,68px)}.hero .skills{max-width:100%}}
+@media(max-width:900px){.hero{padding-top:36vh;max-width:none}}
+.hero p.lead{font-size:clamp(18px,2vw,22px);color:var(--mid);margin:24px 0 32px;max-width:46ch}
+.hero .name{font-weight:600;margin-bottom:18px;display:flex;align-items:center;gap:10px}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--green);display:inline-block}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 24px;border-radius:999px;font-weight:600;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink);background:transparent;font-size:16px;transition:background .2s,color .2s}
+.btn:hover{background:var(--ink);color:#fff}
+.btn.solid{background:var(--ink);color:#fff}
+.btn.solid:hover{background:var(--green-d);border-color:var(--green-d)}
+.skills{display:flex;flex-wrap:wrap;gap:10px;margin-top:40px;padding:0;list-style:none;max-width:44em}
+.skills li{padding:9px 16px;border:1px solid var(--line);background:rgba(255,255,255,.8);border-radius:999px;font-size:15px;font-weight:500}
+section.page{position:relative;margin-top:6vh;padding-top:8vh}
+body[data-page="experience"] section.page::before{display:none}
+section.page::before{content:"";position:absolute;top:0;left:0;width:100%;height:calc(1px + 3px*var(--ly,0));background:var(--ink);background:color-mix(in srgb,var(--green) calc(var(--ly,0)*100%),var(--ink));transform-origin:var(--ox,left) center;transform:scaleX(var(--lx,1));will-change:transform}
+.about{display:grid;grid-template-columns:minmax(220px,340px) 1fr;gap:clamp(28px,5vw,64px);align-items:start}
+.photo{aspect-ratio:4/5;transform:scaleY(.98);background:var(--surface);border:1.5px dashed var(--line);border-radius:20px;display:grid;place-items:center;color:var(--mid);font-size:15px;text-align:center;padding:20px}
+.quote{font:700 clamp(22px,2.6vw,30px)/1.25 var(--display);letter-spacing:-.01em;border-left:3px solid var(--green);padding-left:18px;margin:28px 0;max-width:22em}
+.facts{margin:24px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.facts li{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+.facts span:first-child{color:var(--mid)}
+.role{display:grid;grid-template-columns:200px 1fr;gap:12px 40px;padding:32px 0;border-top:1px solid var(--line)}
+.role .when{color:var(--mid);font-size:15px}
+.role ul{margin:12px 0 0;padding-left:20px;max-width:62ch}
+.role li{margin-bottom:6px}
+.role .btns{margin-top:20px}
+.tag{display:inline-block;font-size:13px;font-weight:600;color:var(--green-d);background:#E6F4EC;border-radius:999px;padding:4px 12px;margin-bottom:10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:10px;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(20,20,20,.08)}
+.thumb{aspect-ratio:16/10;border-radius:12px;background:var(--bg);border:1px dashed var(--line);display:grid;place-items:center;color:var(--mid);font-size:14px;text-align:center;padding:10px}
+.card p{margin:0;font-size:16px}
+.contact-list{display:grid;gap:14px;margin-top:8px;max-width:520px}
+.contact-list a.row{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 24px;background:var(--surface);border:1px solid var(--line);border-radius:16px;color:var(--ink);text-decoration:none;font-weight:600;overflow-wrap:anywhere;transition:border-color .2s}
+.contact-list a.row:hover{border-color:var(--green)}
+.contact-list small{display:block;color:var(--mid);font-weight:400;font-size:14px}
+.query{display:grid;gap:16px;max-width:520px;margin-top:24px}
+.query label{display:grid;gap:6px;font-weight:600;font-size:15px}
+.query input,.query textarea{font:400 16px var(--body);padding:13px 16px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--ink);width:100%}
+.query input:focus,.query textarea:focus{outline:2px solid var(--green);outline-offset:1px;border-color:var(--green)}
+.query .note{font-size:14px;margin:0}
+button.btn{cursor:pointer;font-family:var(--body)}
+footer{text-align:left;color:var(--mid);font-size:14px;margin:80px var(--page-inset) 0;padding:36px 0;border-top:1px solid var(--line)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px clamp(32px,8vw,120px)}
+.foot .col{display:flex;flex-direction:column;gap:8px;min-width:180px}
+.foot .col:first-child{max-width:300px}
+.foot strong{color:var(--ink);font-size:15px}
+.foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;margin-top:36px;padding-top:20px;border-top:1px solid var(--line)}
+footer a{color:var(--mid);text-decoration:none}
+footer a:hover{color:var(--ink)}
+@media(max-width:760px){.about{grid-template-columns:minmax(0,1fr)}.role{grid-template-columns:minmax(0,1fr);gap:6px}.photo{max-width:300px}.facts li{align-items:flex-start;gap:12px}.facts li span:last-child{text-align:right;overflow-wrap:anywhere}.foot{justify-content:flex-start;gap:28px 32px}.foot .col{min-width:min(180px,100%)}}
+@media(max-width:760px){header{grid-template-columns:1fr auto;gap:8px 16px}header nav{grid-column:1/-1;grid-row:2;justify-content:center}}
+@media(max-width:600px){:root{--page-gutter:clamp(18px,6vw,24px)}header{padding-top:14px;padding-bottom:14px;align-items:center;gap:8px 12px}nav{width:100%;gap:2px 4px}nav a{padding:7px 9px;font-size:14px}.hero{padding-top:36vh;padding-bottom:4vh}.hero h1{font-size:clamp(38px,11vw,56px)}.hero p.lead{font-size:18px;margin:18px 0 24px}.skills{margin-top:28px;gap:8px}.skills li{font-size:14px;padding:8px 12px}.btn{padding:12px 18px;font-size:15px}.hire{padding:7px 9px;font-size:14px}section.page{margin-top:4vh;padding-top:6vh}h2{margin-bottom:20px}.card{padding:20px}.contact-list a.row{padding:16px 18px}footer{margin-top:56px;padding-top:28px}.foot-bottom{margin-top:28px}}
+body[data-page="experience"] section.page{margin-top:clamp(12px,2vh,24px);padding-top:clamp(12px,2vh,24px)}
+body[data-page="experience"] #experience h2{margin-bottom:4px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body data-page="experience">
+<header>
+  <a class="brand" href="Rohan%20Pathak%20-%20Digital%20Marketor%20and%20Growth%20Professional.html#home">Rohan Pathak</a>
+  <a class="btn solid hire" href="https://wa.me/919872653601?text=Hi%20Rohan%2C%20I%27d%20like%20to%20discuss%20hiring%20you." target="_blank" rel="noopener">Hire me</a>
+</header>
+<main>
+<section class="view page" id="experience">
+  <h2>Where I've worked</h2>
+  <p class="muted">Details of past roles and supporting documents are available on request.</p>
+  <div class="role">
+    <div class="when">U-Tech Manufacturing</div>
+    <div>
+      <span class="tag">Content to win clients</span>
+      <h3>Social media &amp; brand positioning</h3>
+      <ul>
+        <li>Managed social media from start to finish, including planning, creating, and publishing content.</li>
+        <li>Tracked performance after each post and researched ways to improve.</li>
+        <li>Designed posters and carousels to generate client enquiries.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://www.instagram.com/madebyutech/" target="_blank" rel="noopener noreferrer">Visit profile <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="role">
+    <div class="when">Star Advertising<br>3 months</div>
+    <div>
+      <span class="tag">SEO internship</span>
+      <h3>Off-page SEO &amp; graphic design</h3>
+      <ul>
+        <li>Worked on off-page SEO to improve the visibility of client websites.</li>
+        <li>Created graphic design assets to support SEO work.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="Rohan%20Pathak%20offer%20letter.pdf" target="_blank" rel="noopener noreferrer">Offer letter <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="role">
+    <div class="when">The Dietrole</div>
+    <div>
+      <span class="tag">Social presence &amp; followers</span>
+      <h3>Social media &amp; ads</h3>
+      <ul>
+        <li>Managed the brand's social media page, which has about 160 followers.</li>
+        <li>Planned and published content to build the brand's presence and grow its audience.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://www.instagram.com/thedietrole/" target="_blank" rel="noopener noreferrer">Visit profile <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="role">
+    <div class="when">Corizo Edutech<br>Internship</div>
+    <div>
+      <span class="tag">Sales &amp; campaigns</span>
+      <h3>Digital course sales</h3>
+      <ul>
+        <li>Sold digital courses directly to prospective learners through WhatsApp outreach.</li>
+        <li>Ran email campaigns to turn interested leads into enrolments.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="Corizo%20offer%20letter%20-%20Rohan%20Pathak.pdf" target="_blank" rel="noopener noreferrer">Offer letter <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="role">
+    <div class="when">YouTube<br>Independent project</div>
+    <div>
+      <span class="tag">Video editing</span>
+      <h3>Car edit videos</h3>
+      <ul>
+        <li>Edited and published fast-paced, transition-driven car videos on YouTube, all still live.</li>
+        <li>Built a strong eye for pacing, transitions and visuals that hold attention, which I now bring to social media content.</li>
+      </ul>
+      <div class="btns">
+        <a class="btn" href="https://www.youtube.com/channel/UC8x22stHkKwliYuDMLv6lWA" target="_blank" rel="noopener noreferrer">Visit page <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="role">
+    <div class="when">Independent project</div>
+    <div>
+      <span class="tag">Own store</span>
+      <h3>Dropshipping store</h3>
+      <ul>
+        <li>Set up and ran my own dropshipping store on Shopify.</li>
+        <li>Learned first-hand how much supplier reliability matters, and why suppliers need to be vetted before selling.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<div class="btns" style="margin-top:32px"><a class="btn" href="Rohan%20Pathak%20-%20Digital%20Marketor%20and%20Growth%20Professional.html#projects"><span aria-hidden="true">&larr;</span> Go back</a></div>
+</main>
+<footer>
+  <div class="foot">
+    <div class="col"><strong>Rohan Pathak</strong><span>Digital Marketer and Growth Professional</span><span>Ludhiana, Punjab, India.</span></div>
+    <div class="col"><strong>Contact</strong><a href="mailto:rohanpathak2971@gmail.com">rohanpathak2971@gmail.com</a><a href="tel:+919872653601">+91 98726 53601</a><a href="https://wa.me/919872653601" target="_blank" rel="noopener">WhatsApp</a></div>
+    <div class="col"><strong>Sections</strong><a href="Rohan%20Pathak%20-%20Digital%20Marketor%20and%20Growth%20Professional.html#home">Home</a><a href="Rohan%20Pathak%20-%20Digital%20Marketor%20and%20Growth%20Professional.html#services">Services</a><a href="Rohan%20Pathak%20-%20Digital%20Marketor%20and%20Growth%20Professional.html#about">About me</a><a href="Rohan%20Pathak%20-%20Digital%20Marketor%20and%20Growth%20Professional.html#projects">Projects</a><a href="Rohan%20Pathak%20-%20Digital%20Marketor%20and%20Growth%20Professional.html#contact">Contact me</a></div>
+  </div>
+  <div class="foot-bottom"><span>Details of past roles and supporting documents are available on request.</span><span>&copy; 2026 Rohan Pathak. All rights reserved.</span></div>
+</footer>
+</body>
+</html>
+
+
